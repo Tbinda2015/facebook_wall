@@ -1,7 +1,6 @@
 $(document).ready(function() {
-	$("button").click(function() {
-	var message =	$("input").val();
-		alert(message);
+	$("#post-btn").click(function() {
+		var message = "<p>" + $("#message").val() + "</p>";
+		$("#wall").prepend(message);
 	});
 });
-
